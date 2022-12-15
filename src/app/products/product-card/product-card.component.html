@@ -1,0 +1,9 @@
+<div class="card" >
+  <img  class="card-img-top" [src]="product.thumbnail" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    <p class="card-text small">{{product.description}}</p>
+    <p class="card-text text-right">{{product.price}}</p>
+    <a (click)="action()" class="btn btn-primary">{{buttonText}}</a>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.card {
+    width: 27vw;
+    height: 60vh;
+}
+.card-img-top{
+    height: 30vh;
+}
+.small{
+    height: 50px;
+}
