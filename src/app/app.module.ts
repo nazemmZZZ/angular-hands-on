@@ -1,3 +1,4 @@
+import { AuthEffects } from './store/auth/auth.effects';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -44,7 +45,7 @@ import { LogoutComponent } from './logout/logout.component';
     StoreDevtoolsModule.instrument({
       maxAge: 25,
     }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([AuthEffects]),
 
     StoreRouterConnectingModule.forRoot({
       stateKey: 'router',

@@ -16,9 +16,6 @@ export class AuthService implements CanActivate {
     return this.store.pipe(
       select(isLoggedInBool),
       tap((loggedIn) => {
-        console.log('====================================');
-        console.log(loggedIn);
-        console.log('====================================');
         if (!loggedIn) {
           this.router.navigateByUrl('/login');
         }

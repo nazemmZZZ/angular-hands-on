@@ -21,6 +21,11 @@ export const isLoggedInBool = createSelector(selectAuthState, (auth) =>
   !!auth.user
 );
 
+export const Token = createSelector(
+  selectAuthState,
+  (auth) =>auth.user
+);
+
 export const isLoggedOut = createSelector(
     isLoggedIn,
     loggedIn => !loggedIn

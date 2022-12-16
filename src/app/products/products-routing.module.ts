@@ -1,3 +1,5 @@
+import { AutocompleteResolver } from './services/autocomplete.resolver';
+import { SearchPageComponent } from './search-page/search-page.component';
 import { CartListComponent } from './cart-list/cart-list.component';
 import { ProductsResolver } from './services/products.resolver';
 import { NgModule } from '@angular/core';
@@ -13,7 +15,9 @@ const routes: Routes = [
     }
   },
      { path: 'cart', component: CartListComponent
-  },
+  }, { path: 'search', component: SearchPageComponent, resolve:{
+    search:AutocompleteResolver
+  }}
 ];
 
 @NgModule({

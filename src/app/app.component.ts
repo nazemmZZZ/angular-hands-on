@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    const token = localStorage.getItem('tocken');
+    const token = localStorage.getItem('token');
     if (token) {
       this.store.dispatch(login({user:token}))
     }
