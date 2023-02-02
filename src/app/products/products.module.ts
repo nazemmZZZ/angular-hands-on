@@ -24,7 +24,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { NgbTypeahead } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-const entityMetadataMap: EntityMetadataMap = {
+
+export const entityMetadataMap: EntityMetadataMap = {
   Product: {},
   Cart: {},
   Suggrstion:{},

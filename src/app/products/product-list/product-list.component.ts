@@ -13,11 +13,12 @@ import { Component, OnInit } from '@angular/core';
 export class ProductListComponent implements OnInit {
   public products$!: Observable<Product[]>;
   public products!: Product[];
-  public  type:Cardtype='ITEAM'     
+  public  type:Cardtype='ITEAM'
 
   constructor(private producEntity: ProductEntitiyServiceService) {}
   ngOnInit(): void {
     this.products$ = this.producEntity.entities$;
-    this.products$.subscribe(val=>this.products=val)
+    this.products$.subscribe(val => this.products = val)
+
   }
 }

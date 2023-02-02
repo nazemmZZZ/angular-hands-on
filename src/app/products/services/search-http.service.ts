@@ -9,7 +9,6 @@ export class SearchHttpService {
   constructor(private http: HttpClient) { }
   search(term: string): Observable<Product[]> {
     const params = new HttpParams().set('q', term)
-    console.log(params)
     return this.http
       .get('https://dummyjson.com/products/search', { params: params })
       .pipe(map((res: any) => res['products']));

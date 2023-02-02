@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
+# For backend 
+visit `https://github.com/nazemmZZZ/server.git`
+# install deps
+you can use npm or pnpm 
+if you want to use pnpm you should install pnpm globally using
+`npm install -g pnpm`
+#### using pnpm
+`pnpm install`
+#### using npm
+`npm install`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
