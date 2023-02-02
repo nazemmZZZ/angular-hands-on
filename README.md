@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 visit `https://github.com/nazemmZZZ/server.git`
 # install deps
 you can use npm or pnpm 
+
 if you want to use pnpm you should install pnpm globally using
 `npm install -g pnpm`
 #### using pnpm
